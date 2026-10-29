@@ -1,0 +1,553 @@
+{
+  "schema_version": 1,
+  "language": "ru",
+  "classification_rules_en": [
+    "Classify only the tested fact in the prompt and answer choices; never read help or explanations.",
+    "Each canonical question has a primary leaf and optional directly relevant secondary leaves.",
+    "Collection and topic memberships are independent of question identity and user progress.",
+    "Numeric examples do not imply speed-limit membership.",
+    "Stable existing leaf IDs survive reparenting; the visible hierarchy has exactly two levels."
+  ],
+  "nodes": [
+    {
+      "id": "routine",
+      "label_ru": "Водитель и его состояние",
+      "parent_id": null
+    },
+    {
+      "id": "numbers",
+      "label_ru": "Скорость и дистанция",
+      "parent_id": null
+    },
+    {
+      "id": "signs",
+      "label_ru": "Знаки и разметка",
+      "parent_id": null
+    },
+    {
+      "id": "priority",
+      "label_ru": "Приоритет и регулирование",
+      "parent_id": null
+    },
+    {
+      "id": "driving",
+      "label_ru": "Дорога и манёвры",
+      "parent_id": null
+    },
+    {
+      "id": "vehicle",
+      "label_ru": "Автомобиль и средства безопасности",
+      "parent_id": null
+    },
+    {
+      "id": "documents",
+      "label_ru": "Документы и обязанности",
+      "parent_id": null
+    },
+    {
+      "id": "incidents",
+      "label_ru": "ДТП и помощь",
+      "parent_id": null
+    },
+    {
+      "id": "routine.drugs",
+      "label_ru": "Наркотики",
+      "parent_id": "routine"
+    },
+    {
+      "id": "routine.alcohol",
+      "label_ru": "Алкоголь",
+      "parent_id": "routine"
+    },
+    {
+      "id": "routine.fatigue",
+      "label_ru": "Сон и усталость",
+      "parent_id": "routine"
+    },
+    {
+      "id": "routine.distraction",
+      "label_ru": "Отвлечение внимания",
+      "parent_id": "routine"
+    },
+    {
+      "id": "routine.reaction",
+      "label_ru": "Время реакции",
+      "parent_id": "routine"
+    },
+    {
+      "id": "routine.emotions",
+      "label_ru": "Эмоции и оценка риска",
+      "parent_id": "routine"
+    },
+    {
+      "id": "routine.health",
+      "label_ru": "Заболевания и лекарства",
+      "parent_id": "routine"
+    },
+    {
+      "id": "routine.seatbelts",
+      "label_ru": "Ремни безопасности",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "routine.helmets",
+      "label_ru": "Шлемы",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "routine.safety",
+      "label_ru": "Безопасное поведение и оценка риска",
+      "parent_id": "routine"
+    },
+    {
+      "id": "routine.ecodriving",
+      "label_ru": "Экономичное вождение",
+      "parent_id": "eco"
+    },
+    {
+      "id": "numbers.speeds",
+      "label_ru": "Ограничения скорости",
+      "parent_id": "numbers"
+    },
+    {
+      "id": "numbers.alcohol",
+      "label_ru": "Нормы алкоголя",
+      "parent_id": "routine"
+    },
+    {
+      "id": "numbers.dimensions",
+      "label_ru": "Габариты и выступание груза",
+      "parent_id": "transport"
+    },
+    {
+      "id": "numbers.capacity",
+      "label_ru": "Количество мест",
+      "parent_id": "transport"
+    },
+    {
+      "id": "numbers.displacement",
+      "label_ru": "Двигатели и рабочий объём",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "numbers.technical",
+      "label_ru": "Технические нормативы",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "numbers.dates",
+      "label_ru": "Зона и время действия знаков",
+      "parent_id": "signs"
+    },
+    {
+      "id": "numbers.deadlines.novice",
+      "label_ru": "Период ограничений для начинающих",
+      "parent_id": "documents"
+    },
+    {
+      "id": "numbers.deadlines.itv",
+      "label_ru": "Периодичность ITV",
+      "parent_id": "documents"
+    },
+    {
+      "id": "numbers.deadlines.licences",
+      "label_ru": "Выдача и продление водительских удостоверений",
+      "parent_id": "documents"
+    },
+    {
+      "id": "numbers.deadlines.certificates",
+      "label_ru": "Выдача и действие сертификатов",
+      "parent_id": "documents"
+    },
+    {
+      "id": "numbers.deadlines.transfer_buyer",
+      "label_ru": "Переоформление автомобиля покупателем",
+      "parent_id": "documents"
+    },
+    {
+      "id": "numbers.deadlines.transfer_seller",
+      "label_ru": "Уведомление о продаже продавцом",
+      "parent_id": "documents"
+    },
+    {
+      "id": "signs.speed",
+      "label_ru": "Знаки скорости",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.priority",
+      "label_ru": "Знаки приоритета",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.mandatory",
+      "label_ru": "Предписывающие знаки",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.warning",
+      "label_ru": "Предупреждающие знаки",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.restrictions",
+      "label_ru": "Запрещающие знаки и ограничения",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.parking",
+      "label_ru": "Знаки остановки и стоянки",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.lanes",
+      "label_ru": "Указатели полос",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.temporary",
+      "label_ru": "Временные знаки и дорожные работы",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.vehicle_plates",
+      "label_ru": "Таблички и обозначения на автомобилях",
+      "parent_id": "signs"
+    },
+    {
+      "id": "signs.markings",
+      "label_ru": "Дорожная разметка",
+      "parent_id": "signs"
+    },
+    {
+      "id": "priority.officer",
+      "label_ru": "Регулировщик",
+      "parent_id": "priority"
+    },
+    {
+      "id": "priority.lights",
+      "label_ru": "Светофор",
+      "parent_id": "priority"
+    },
+    {
+      "id": "priority.tram",
+      "label_ru": "Трамвай",
+      "parent_id": "priority"
+    },
+    {
+      "id": "priority.sign",
+      "label_ru": "Перекрёстки со знаками",
+      "parent_id": "priority"
+    },
+    {
+      "id": "priority.cyclists",
+      "label_ru": "Велосипедисты",
+      "parent_id": "priority"
+    },
+    {
+      "id": "priority.merging",
+      "label_ru": "Включение в поток",
+      "parent_id": "priority"
+    },
+    {
+      "id": "priority.general",
+      "label_ru": "Общие правила и равнозначные перекрёстки",
+      "parent_id": "priority"
+    },
+    {
+      "id": "driving.roundabouts",
+      "label_ru": "Круговое движение",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.lanes",
+      "label_ru": "Расположение на дороге и полосы",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.overtaking",
+      "label_ru": "Обгон",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.parking",
+      "label_ru": "Остановка и стоянка",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.pedestrians",
+      "label_ru": "Пешеходы",
+      "parent_id": "transport"
+    },
+    {
+      "id": "driving.weather",
+      "label_ru": "Дождь и аквапланирование",
+      "parent_id": "conditions"
+    },
+    {
+      "id": "driving.braking",
+      "label_ru": "Торможение и выбор передачи",
+      "parent_id": "driving"
+    },
+    {
+      "id": "vehicle.lights",
+      "label_ru": "Освещение",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "vehicle.visibility",
+      "label_ru": "Обзорность и зеркала",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "vehicle.passive",
+      "label_ru": "Пассивная безопасность",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "vehicle.tyres",
+      "label_ru": "Шины",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "vehicle.passengers",
+      "label_ru": "Перевозка пассажиров",
+      "parent_id": "transport"
+    },
+    {
+      "id": "vehicle.cargo",
+      "label_ru": "Грузы и погрузка",
+      "parent_id": "transport"
+    },
+    {
+      "id": "vehicle.dangerous_goods",
+      "label_ru": "Опасные грузы",
+      "parent_id": "transport"
+    },
+    {
+      "id": "vehicle.motorcycles",
+      "label_ru": "Мотоциклы",
+      "parent_id": "transport"
+    },
+    {
+      "id": "vehicle.classification",
+      "label_ru": "Классификация транспортных средств",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "documents.permissions",
+      "label_ru": "Какими транспортными средствами можно управлять",
+      "parent_id": "documents"
+    },
+    {
+      "id": "documents.itv",
+      "label_ru": "ITV: обязанности и прохождение",
+      "parent_id": "documents"
+    },
+    {
+      "id": "incidents.scene",
+      "label_ru": "Защита и обозначение места ДТП",
+      "parent_id": "incidents"
+    },
+    {
+      "id": "incidents.towing",
+      "label_ru": "Поломка и буксировка",
+      "parent_id": "incidents"
+    },
+    {
+      "id": "signs.information",
+      "label_ru": "Информационные знаки",
+      "parent_id": "signs"
+    },
+    {
+      "id": "priority.narrow",
+      "label_ru": "Узкие участки",
+      "parent_id": "priority"
+    },
+    {
+      "id": "driving.signals",
+      "label_ru": "Сигналы и предупреждения",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.reversing",
+      "label_ru": "Движение задним ходом",
+      "parent_id": "driving"
+    },
+    {
+      "id": "vehicle.mechanics",
+      "label_ru": "Устройство и обслуживание",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "documents.registration",
+      "label_ru": "Регистрация и документы автомобиля",
+      "parent_id": "documents"
+    },
+    {
+      "id": "documents.points",
+      "label_ru": "Баллы и действие удостоверения",
+      "parent_id": "documents"
+    },
+    {
+      "id": "numbers.distances",
+      "label_ru": "Расстояния и интервалы",
+      "parent_id": "numbers"
+    },
+    {
+      "id": "conditions",
+      "label_ru": "Погода и видимость",
+      "parent_id": null
+    },
+    {
+      "id": "transport",
+      "label_ru": "Участники, пассажиры и грузы",
+      "parent_id": null
+    },
+    {
+      "id": "eco",
+      "label_ru": "Экономичность и экология",
+      "parent_id": null
+    },
+    {
+      "id": "speed.adaptation",
+      "label_ru": "Выбор безопасной скорости",
+      "parent_id": "numbers"
+    },
+    {
+      "id": "speed.stopping",
+      "label_ru": "Тормозной и остановочный путь",
+      "parent_id": "numbers"
+    },
+    {
+      "id": "priority.emergency",
+      "label_ru": "Спецтранспорт и экстренные службы",
+      "parent_id": "priority"
+    },
+    {
+      "id": "driving.roads",
+      "label_ru": "Виды дорог",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.merging",
+      "label_ru": "Включение в поток",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.turns",
+      "label_ru": "Повороты",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.uturns",
+      "label_ru": "Разворот",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.crossings",
+      "label_ru": "Железнодорожные переезды и мосты",
+      "parent_id": "driving"
+    },
+    {
+      "id": "driving.tunnels",
+      "label_ru": "Тоннели и подземные проезды",
+      "parent_id": "driving"
+    },
+    {
+      "id": "conditions.ice",
+      "label_ru": "Снег и лёд",
+      "parent_id": "conditions"
+    },
+    {
+      "id": "conditions.wind",
+      "label_ru": "Боковой ветер",
+      "parent_id": "conditions"
+    },
+    {
+      "id": "conditions.fog",
+      "label_ru": "Туман",
+      "parent_id": "conditions"
+    },
+    {
+      "id": "conditions.dark",
+      "label_ru": "Темнота и ослепление",
+      "parent_id": "conditions"
+    },
+    {
+      "id": "vehicle.children",
+      "label_ru": "Детские кресла",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "vehicle.adas",
+      "label_ru": "Электронные помощники водителя",
+      "parent_id": "vehicle"
+    },
+    {
+      "id": "transport.cycles",
+      "label_ru": "Велосипеды и средства мобильности",
+      "parent_id": "transport"
+    },
+    {
+      "id": "transport.trailers",
+      "label_ru": "Прицепы и караваны",
+      "parent_id": "transport"
+    },
+    {
+      "id": "documents.insurance",
+      "label_ru": "Страхование",
+      "parent_id": "documents"
+    },
+    {
+      "id": "incidents.emergency_call",
+      "label_ru": "Вызов помощи и eCall",
+      "parent_id": "incidents"
+    },
+    {
+      "id": "incidents.first_aid",
+      "label_ru": "Первая помощь",
+      "parent_id": "incidents"
+    },
+    {
+      "id": "incidents.fire",
+      "label_ru": "Пожар",
+      "parent_id": "incidents"
+    },
+    {
+      "id": "eco.environment",
+      "label_ru": "Выбросы и защита окружающей среды",
+      "parent_id": "eco"
+    },
+    {
+      "id": "eco.noise",
+      "label_ru": "Шум и выхлопная система",
+      "parent_id": "eco"
+    },
+    {
+      "id": "routine.ergonomics",
+      "label_ru": "Посадка и положение за рулём",
+      "parent_id": "routine"
+    },
+    {
+      "id": "conditions.heat",
+      "label_ru": "Жара и температура в салоне",
+      "parent_id": "conditions"
+    },
+    {
+      "id": "transport.animals",
+      "label_ru": "Животные на дороге и в автомобиле",
+      "parent_id": "transport"
+    },
+    {
+      "id": "incidents.statistics",
+      "label_ru": "Причины и последствия ДТП",
+      "parent_id": "incidents"
+    },
+    {
+      "id": "signs.general",
+      "label_ru": "Действие и размещение знаков",
+      "parent_id": "signs"
+    }
+  ]
+}
