@@ -40,6 +40,8 @@ Images use `public/questions/<id>_1.jpg`. Further images can use `_2.jpg`, `_3.j
 python3 scripts/rebuild-library.py
 ```
 
+Reviewed contributions can be archived separately with per-question activation flags. See [the contribution archive](materials/staged/README.md) for selective activation, duplicate handling and explanation illustrations. Disabled contributions do not change the active question bank or topic navigation.
+
 ## Verification
 
 ```bash
